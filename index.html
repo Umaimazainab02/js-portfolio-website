@@ -9,6 +9,65 @@
     <link rel="stylesheet" href="first.css">
     <title>js portfolio website</title>
 </head>
+
 <body>
-     <script src="app.js"></script>
+    <div>
+        <!---- header --->
+        <nav class="flex justify-between items-center p-5 bg-blue-400 text-white">
+            <h1 class="inline-block text-2xl font-bold text-purple-700 " style="text-shadow: 5px 2px 5px white;">
+                Umaima Zainab
+            </h1>
+            <ul class="flex gap-6">
+                <li>
+                    <a href="#" class="text-white hover:text-purple-700 font-bold transition duration-300 ">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="text-white hover:text-purple-700 font-bold transition duration-300">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <!---- main --->
+      <div id="task1" class="relative w-full h-screen">
+    <img src="slider1.jpg" alt="" class="w-full h-full object-cover" id="imgchng">
+
+
+    <!-- Previous -->
+    <i class="fa-solid fa-angle-left absolute left-18 top-1/2 -translate-y-1/2 text-white/45 hover:text-white text-3xl cursor-pointer" id="font1"></i>
+
+    <!-- Next -->
+    <i class="fa-solid fa-angle-right absolute right-18 top-1/2 -translate-y-1/2 text-white/45 hover:text-white text-3xl cursor-pointer" id="font2"></i>
+     
+    <h1 class="absolute top-130 left-150 text-xl text-white" id="h1chng">First slide label</h1>
+     <h3 class="absolute top-140 left-110 text-md text-white" id="pchng">Some WWW representative placeholder content for the first slide.</h3>
+</div>
+        
+
+
+    </div>
+    <script src="app.js"></script>
 </body>
