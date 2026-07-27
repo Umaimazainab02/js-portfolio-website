@@ -36,7 +36,8 @@ function showSlide() {
 }
 
 // Next Button
-font2.addEventListener("click", function () {
+function nextSlide() {
+
     index++;
 
     if (index >= slides.length) {
@@ -44,9 +45,11 @@ font2.addEventListener("click", function () {
     }
 
     showSlide();
-});
+};
 
 // Previous Button
+font2.addEventListener("click", nextSlide);
+
 font1.addEventListener("click", function () {
     index--;
 
@@ -56,3 +59,6 @@ font1.addEventListener("click", function () {
 
     showSlide();
 });
+setInterval(nextSlide,2000)
+
+showSlide();
