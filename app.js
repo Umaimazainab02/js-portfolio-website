@@ -59,6 +59,13 @@ font1.addEventListener("click", function () {
 
     showSlide();
 });
-setInterval(nextSlide,2000)
+setInterval(nextSlide,3000)
 
 showSlide();
+
+
+
+
+
+
+
