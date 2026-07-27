@@ -18,31 +18,31 @@
         </h1>
         <ul class="flex gap-6">
             <li>
-                <a href="#" class="text-white hover:text-purple-700 font-bold transition duration-300 ">
+                <a href="#home" class="text-white hover:text-purple-700 font-bold transition duration-300 ">
                     Home
                 </a>
             </li>
 
             <li>
-                <a href="#" class="text-white hover:text-purple-700 font-bold transition duration-300">
+                <a href="#about" class="text-white hover:text-purple-700 font-bold transition duration-300">
                     About Us
                 </a>
             </li>
 
             <li>
-                <a href="#" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                <a href="#services" class="text-white hover:text-purple-600 font-bold transition duration-300">
                     Services
                 </a>
             </li>
 
             <li>
-                <a href="#" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                <a href="#gallery" class="text-white hover:text-purple-600 font-bold transition duration-300">
                     Portfolio
                 </a>
             </li>
 
             <li>
-                <a href="#" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                <a href="#contact" class="text-white hover:text-purple-600 font-bold transition duration-300">
                     Contact
                 </a>
             </li>
@@ -51,7 +51,7 @@
 
 
     <!---- main --->
-    <div id="task1" class="relative w-full h-screen transition-opacity duration-700">
+    <div id="home" class="relative w-full h-screen transition-opacity duration-700">
         <img src="slider1.jpg" alt="" class="w-full h-full " id="imgchng">
 
 
@@ -70,7 +70,7 @@
 
 
     <!----About us--->
-    <div>
+    <div id="about">
         <h1 class="text-5xl text-center mt-10 text-gray-800">About us</h1>
         <h1 class="text-gray-400 text-2xl text-center mb-10">_______________________________</h1>
     </div>
@@ -111,7 +111,7 @@
 
 
     <!----services--->
-    <div class="bg-[#f2f3f5] p-10">
+    <div class="bg-[#f2f3f5] p-10" id="services">
         <h1 class="text-5xl text-center ">Our Services</h1>
         <h1 class="text-gray-400 text-2xl text-center mb-2">_______________________________</h1>
 
@@ -158,21 +158,154 @@
 
 
     <!-----Gallery-->
-    <div class="">
+    <div class="" id="gallery">
         <h1 class="text-5xl text-center">Gallery</h1>
         <h1 class="text-gray-400 text-2xl text-center mb-2">_______________________________</h1>
     </div>
 
-<div class="flex flex-wrap  gap-4 overflow-x-auto justify-center mt-15">
-    <img src="slider1.jpg" alt="" class="w-95 h-60 hover:scale-110 hover:z-50 relative">
-    <img src="slider2.jpg" alt="" class="w-95 h-60">
-    <img src="slider.5.jpg" alt="" class="w-95 h-60">
-    <img src="slider.5.jpg" alt="" class="w-95 h-60">
-    <img src="slider1.jpg" alt="" class="w-95 h-60">
-    <img src="slider2.jpg" alt="" class="w-95 h-60">
-    <img src="pexels1.jpg" alt="" class="w-95 h-60">
-    <img src="slider.5.jpg" alt="" class="w-95 h-60">
-    <img src="pexels.jpg" alt="" class="w-95 h-60">
-</div>
+    <div class="flex flex-wrap gap-4 justify-center mt-15 mb-15">
+
+        <!-- Card 1 -->
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider1.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">Creative Design</h2>
+                <p class="text-sm">Web Development & UI/UX</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider2.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">Modern Website</h2>
+                <p class="text-sm">UI / UX Design</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider.5.jpg"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">Portfolio</h2>
+                <p class="text-sm">Frontend Development</p>
+            </div>
+        </div>
+
+        <!--Card 04-->
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider.5.jpg" alt=""
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">Website</h2>
+                <p class="text-sm">javascript</p>
+            </div>
+        </div>
+        <!---Card 05-->
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider1.jpg" alt=""
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">Machine learning</h2>
+                <p class="text-sm">AI</p>
+            </div>
+        </div>
+
+        <!-----Card 06---->
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider2.jpg" alt=""
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">App Development</h2>
+                <p class="text-sm">Games</p>
+            </div>
+        </div>
+
+
+        <!-----Card 06----->
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider1.jpg" alt=""
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">Gaming</h2>
+                <p class="text-sm">UI/UX</p>
+            </div>
+        </div>
+
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider2.jpg" alt=""
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">Desiging</h2>
+                <p class="text-sm">HTML</p>
+            </div>
+        </div>
+
+        <div class="relative w-95 h-60 overflow-hidden group">
+            <img src="slider.5.jpg" alt=""
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+
+            <div
+                class="absolute bottom-[-60px] left-0 w-full text-center text-white transition-all duration-500 group-hover:bottom-6">
+                <h2 class="text-2xl font-bold">Desiging</h2>
+                <p class="text-sm">HTML</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!------checkout---->
+    <div class="bg-[#98ddeb] text-center pt-13 pb-13">
+        <h1 class="text-4xl text-white">Check out my Git Profile</h1>
+        <p class="pt-3 pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et
+            dolore magna aliqua.</p>
+        <div
+            class="flex flex-row ml-155 w-30 border border-white  rounded-md p-1 mt-2 text-white hover:text-black hover:bg-white">
+            <i class="fa-solid fa-circle-arrow-right pr-2 pt-1"></i>
+            <button class=" ">Learn
+                More</button>
+        </div>
+
+    </div>
+
+    <!----contact us---->
+         <div class="" id="contact">
+        <h1 class="text-5xl text-center mt-15">Contact Us</h1>
+        <h1 class="text-gray-400 text-2xl text-center mb-2">_______________________________</h1>
+    </div>
     <script src="app.js"></script>
 </body>
