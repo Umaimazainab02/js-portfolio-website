@@ -66,6 +66,20 @@ showSlide();
 
 
 
+//////////form////////////////
+let name=document.getElementById("name").value.trim();
+let password=document.getElementById("password").value.trim();
+let email =document.getElementById("email").value.trim();
+let male= document.getElementById("male");
+let female=document.getElementById("female");
+let select =document.getElementById("select");
+let upload =document.getElementById("address").value.trim();
+let detail=document.getElementById("detail").value.trim();
+let submit =document.getElementById("submit").value.trim();
 
+submit.addEventListener("click",function(){
+    if(name===""){
+        document.getElementById
+    }
 
-
+})

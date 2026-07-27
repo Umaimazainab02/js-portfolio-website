@@ -312,27 +312,27 @@
     <div class="flex flex-col items-center">
         <div>
             <h2>Name</h2>
-            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8 mt-2">
+            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8 mt-2 " id="name">
         </div>
         <div class="mt-5">
             <h2>Email Address</h2>
-            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8 mt-2">
+            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8 mt-2" id="email">
             <p class="text-gray-500 text-sm">We'll not share your email with anyone else.</p>
         </div>
         <div class="mt-6">
             <h2>Password</h2>
-            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8">
+            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8" id="password">
             <div class="flex flex-row">
                 <h2 class=" mt-2 mr-3  mb-3">Gender</h2>
 
                 <div class="flex gap-2">
                     <label class="flex items-center gap-2">
-                        <input type="radio" name="gender" value="male">
+                        <input type="radio" name="gender" value="male" id="male">
                         Male
                     </label>
 
                     <label class="flex items-center gap-2">
-                        <input type="radio" name="gender" value="female">
+                        <input type="radio" name="gender" value="female" id="female">
                         Female
                     </label>
 
@@ -342,7 +342,7 @@
             </div>
             <div mt-6 >
                 <h2>City</h2>
-                <select name="" id="" class="w-200 h-9 border border-gray-300 mt-2 text-gray-700">
+                <select name="" id="" class="w-200 h-9 border border-gray-300 mt-2 text-gray-700" id="select">
                     <option value=""> Select city</option>
                     <option value="">Bwp </option>
                     <option value="">isb</option>
@@ -353,21 +353,21 @@
 
             <div class="mt-6 mb-9">
             <h1 class="pb-2">Put here short details </h1>
-            <input type="text" class="border border-gray-300 w-200 h-20">
+            <input type="text" class="border border-gray-300 w-200 h-20" id="detail">
             </div>
  
             <div class="mb-6">
                 <h1>Upload file</h1>
-                <input type="file" id="file" accept="image/*" class="file:border border-gray-300  w-200">
+                <input type="file" id="file" accept="image/*" class="file:border border-gray-300  w-200" id="upload">
 
             </div>
 
             <div class="mt-6 mb-9">
             <h1 class="pb-2">Address</h1>
-            <input type="text" class="border border-gray-300 w-200 h-16">
+            <input type="text" class="border border-gray-300 w-200 h-16" id="address">
             </div>
 
-            <button class="flex items-center p-2 pl-2 pr-2 text-white bg-blue-700 rounded-sm">
+            <button class="flex items-center p-2 pl-2 pr-2 text-white bg-blue-700 rounded-sm" id="submit">
                 Submit
             </button>
         </div>
