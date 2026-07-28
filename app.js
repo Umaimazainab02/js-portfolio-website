@@ -1,24 +1,24 @@
 let slides = [
-{
-    img: "slider1.jpg",
-    title: "First Slide",
-    text: "Some representative placeholder content for the first slide."
-},
-{
-    img: "slider2.jpg",
-    title: "Second Slide",
-    text: "Some representative placeholder content for the second slide."
-},
-{
-    img: "pexels.jpg",
-    title: "Third Slide",
-    text: "Some representative placeholder content for the third slide."
-},
-{
-    img: "pexels1.jpg",
-    title: "Fourth Slide",
-    text: "Some representative placeholder content for the fourth slide."
-}
+    {
+        img: "slider1.jpg",
+        title: "First Slide",
+        text: "Some representative placeholder content for the first slide."
+    },
+    {
+        img: "slider2.jpg",
+        title: "Second Slide",
+        text: "Some representative placeholder content for the second slide."
+    },
+    {
+        img: "pexels.jpg",
+        title: "Third Slide",
+        text: "Some representative placeholder content for the third slide."
+    },
+    {
+        img: "pexels1.jpg",
+        title: "Fourth Slide",
+        text: "Some representative placeholder content for the fourth slide."
+    }
 ];
 
 let index = 0;
@@ -59,7 +59,7 @@ font1.addEventListener("click", function () {
 
     showSlide();
 });
-setInterval(nextSlide,3000)
+setInterval(nextSlide, 3000)
 
 showSlide();
 
@@ -67,19 +67,34 @@ showSlide();
 
 
 //////////form////////////////
-let name=document.getElementById("name").value.trim();
-let password=document.getElementById("password").value.trim();
-let email =document.getElementById("email").value.trim();
-let male= document.getElementById("male");
-let female=document.getElementById("female");
-let select =document.getElementById("select");
-let upload =document.getElementById("address").value.trim();
-let detail=document.getElementById("detail").value.trim();
-let submit =document.getElementById("submit").value.trim();
+let name = document.getElementById("name");
+let password = document.getElementById("password");
+let email = document.getElementById("email");
+let male = document.getElementById("male");
+let female = document.getElementById("female");
+let select = document.getElementById("select");
+let upload = document.getElementById("address");
+let detail = document.getElementById("detail");
+let submit = document.getElementById("submit");
 
-submit.addEventListener("click",function(){
-    if(name===""){
-        document.getElementById
+submit.addEventListener("click", function () {
+    if (name.value.trim() === "") {
+        document.getElementById("nameerror").innerHTML = "Enter your name";
+        return;
+    } else {
+        document.getElementById("nameerror").innerHTML = "";
+    }
+    if (password.value.trim() === "") {
+        document.getElementById("passerror").innerHTML = "Enter your password";
+        return;
+
+    } else if (password.value.length < 8) {
+        document.getElementById("passerror").innerHTML = "Enter at least 8 character";
+        return;
+    }
+
+    else {
+        document.getElementById("passerror").innerHTML = "";
     }
 
 })
