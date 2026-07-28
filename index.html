@@ -313,18 +313,18 @@
         <div>
             <h2>Name</h2>
             <input type="text" placeholder="" class="border border-gray-300 w-200 h-8 mt-2 " id="name">
-            <p id="nameerror" class="text-red-500"></p>
+            <p id="nameerror" class="text-red-500 text-sm"></p>
         </div>
         <div class="mt-5">
             <h2>Email Address</h2>
             <input type="text" placeholder="" class="border border-gray-300 w-200 h-8 mt-2" id="email">
-             <p id="emailerror" class="text-red-500"></p>
+            <p id="emailerror" class="text-red-500 text-sm"></p>
             <p class="text-gray-500 text-sm">We'll not share your email with anyone else.</p>
         </div>
         <div class="mt-6">
             <h2>Password</h2>
             <input type="text" placeholder="" class="border border-gray-300 w-200 h-8" id="password">
-            <p id="passerror" class="text-red-500"></p>
+            <p id="passerror" class="text-red-500 text-sm"></p>
             <div class="flex flex-row">
                 <h2 class=" mt-2 mr-3  mb-3">Gender</h2>
 
@@ -343,37 +343,64 @@
                 </div>
 
             </div>
-            <div mt-6 >
+            <div mt-6>
                 <h2>City</h2>
-                <select name="" id="" class="w-200 h-9 border border-gray-300 mt-2 text-gray-700" id="select">
-                <p id="selecterror" class="text-red-500"></p>
+                <select name="" class="w-200 h-9 border border-gray-300 mt-2 text-gray-700" id="select">
+
                     <option value=""> Select city</option>
-                    <option value="">Bwp </option>
-                    <option value="">isb</option>
-                    <option value="">lahore</option>
-                    <option value="">multan</option>
+                    <option value="bwp">Bwp </option>
+                    <option value="isb">isb</option>
+                    <option value="lahore">lahore</option>
+                    <option value="multan">multan</option>
                 </select>
+                <p id="selecterror" class="text-red-500 text-sm"></p>
             </div>
 
             <div class="mt-6 mb-9">
-            <h1 class="pb-2">Put here short details </h1>
-            <input type="text" class="border border-gray-300 w-200 h-20" id="detail">
+                <h1 class="pb-2">Put here short details </h1>
+                <textarea id="detail" class="border border-gray-300 w-200 h-20 p-2"></textarea>
+                <p id="detailerror" class="text-red-500 text-sm"></p>
+
             </div>
- 
+
             <div class="mb-6">
-                <h1>Upload file</h1>
-                <input type="file" id="file" accept="image/*" class="file:border border-gray-300  w-200" id="upload">
+                <h1 class="mb-2">Upload File</h1>
 
+                <input type="file" id="file" accept="image/*" class="w-full border border-gray-300 rounded-lg
+               file:mr-4
+               file:px-3
+               file:py-2
+               file:border-white
+               file:bg-gray-300
+               file:text-black
+               file:rounded-sm
+               file:cursor-pointer
+               hover:file:bg-gray-400">
+
+                <p id="fileerror" class="text-red-500 mt-2 text-sm"></p>
             </div>
 
-            <div class="mt-6 mb-9">
-            <h1 class="pb-2">Address</h1>
-            <input type="text" class="border border-gray-300 w-200 h-16" id="address">
-            </div>
+            <div class="mt-6 mb-2">
+                <h1 class="pb-2">Address</h1>
+                <textarea class="border border-gray-300 w-200 h-16" id="address"></textarea>
+                <p id="addresserror" class="text-red-500 mt-2 text-sm"></p>
 
-            <button class="flex items-center p-2 pl-2 pr-2 text-white bg-blue-700 rounded-sm hover:scale-104 " id="submit">
+            </div>
+            <div class="flex items-center  gap-2 mt-0 ">
+                <input type="checkbox" id="check" class="w-4 h-4 accent-blue-600 ">
+
+                <label for="check" class="text-gray-700 text-sm">
+                    Check me out
+                </label>
+
+            </div>
+            <p id="checkerror" class="text-red-500 mt-2 text-sm"></p>
+
+            <button class="flex items-center p-2 pl-3 pr-3 text-white bg-blue-700 rounded-sm hover:scale-104 mt-4"
+                id="submit">
                 Submit
             </button>
+            <p id="submiterror" class="text-red-500 mt-2 text-3xl font-bold flex justify-center "></p>
         </div>
         <script src="app.js"></script>
 </body>
