@@ -12,48 +12,68 @@
 
 <body>
     <!---- header --->
-    <nav class="flex justify-between items-center p-2 bg-blue-400 w-full">
+    <nav class="flex justify-between items-center p-2 bg-blue-400 w-full relative">
         <h1 class="inline-block text-lg md:text-xl font-bold text-purple-500 md:text-amber-300 lg:text-white"
             style="text-shadow: 5px 2px 5px white;">
             Umaima Zainab
         </h1>
-        <ul class="flex gap-6">
+
+        <!-- Desktop Links -->
+        <ul class="hidden md:flex gap-6">
             <li>
-                <a href="#home" class="text-white  hover:text-purple-700 hidden md:block font-bold transition duration-300 ">
+                <a href="#home" class="text-white hover:text-purple-700 font-bold transition duration-300">
                     Home
                 </a>
             </li>
-
             <li>
-                <a href="#about" class="text-white hover:text-purple-700 hidden md:block font-bold transition duration-300">
+                <a href="#about" class="text-white hover:text-purple-700 font-bold transition duration-300">
                     About Us
                 </a>
             </li>
-
             <li>
-                <a href="#services" class="text-white hover:text-purple-600 hidden md:block font-bold transition duration-300">
+                <a href="#services" class="text-white hover:text-purple-600 font-bold transition duration-300">
                     Services
                 </a>
             </li>
-
             <li>
-                <a href="#gallery" class="text-white hover:text-purple-600 hidden md:block font-bold transition duration-300">
+                <a href="#gallery" class="text-white hover:text-purple-600 font-bold transition duration-300">
                     Portfolio
                 </a>
             </li>
-
             <li>
-                <a href="#contact" class="text-white hover:text-purple-600 hidden md:block font-bold transition duration-300">
+                <a href="#contact" class="text-white hover:text-purple-600 font-bold transition duration-300">
                     Contact
                 </a>
             </li>
         </ul>
-    </nav>
 
+        <!-- Hamburger Icon (mobile only) -->
+        <i class="fa-solid fa-bars text-white text-2xl md:hidden cursor-pointer mr-10" id="hamburger"></i>
+
+        <!-- Mobile Menu (hidden by default, JS toggles) -->
+        <ul id="mobileMenu"
+            class="hidden flex-col gap-4 absolute top-full left-0 w-full bg-blue-400 p-4 md:hidden z-50">
+            <li>
+                <a href="#home" class="text-white hover:text-purple-700 font-bold block">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="text-white hover:text-purple-700 font-bold block">About Us</a>
+            </li>
+            <li>
+                <a href="#services" class="text-white hover:text-purple-600 font-bold block">Services</a>
+            </li>
+            <li>
+                <a href="#gallery" class="text-white hover:text-purple-600 font-bold block">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact" class="text-white hover:text-purple-600 font-bold block">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
     <!---- main --->
     <div id="home" class="relative w-full h-screen transition-opacity duration-700">
-        <img src="slider1.jpg" alt="" class="w-full h-full " id="imgchng">
+        <img src="slider1.jpg" alt="" class="w-full h-125 md:h-full " id="imgchng">
 
 
         <!-- Previous -->
@@ -64,24 +84,26 @@
         <i class="fa-solid fa-angle-right absolute right-18 top-1/2 -translate-y-1/2 text-white/45 hover:text-white text-3xl cursor-pointer"
             id="font2"></i>
 
-        <h1 class="absolute top-130 left-150 text-xl text-white" id="h1chng">First slide label</h1>
-        <h3 class="absolute top-140 left-110 text-md text-white" id="pchng">Some representative placeholder content for
-            the first slide.</h3>
+        <h1 class="absolute bottom-24 left-4 md:bottom-32 md:left-16 lg:top-130 lg:left-150 text-sm md:text-xl text-white text-center"
+            id="h1chng">First slide label</h1>
+        <h3 class="absolute bottom-14 left-6 md:bottom-20 md:left-16 lg:top-140 lg:left-110 text-xs md:text-lg text-white"
+            id="pchng">Some representative placeholder content for the first slide.</h3>
     </div>
 
 
     <!----About us--->
     <div id="about">
-        <h1 class="text-5xl text-center mt-10 text-gray-800">About us</h1>
-        <h1 class="text-gray-400 text-2xl text-center mb-10">_______________________________</h1>
+        <h1 class="text-lg md:text-5xl text-center mt-10 text-gray-800">About us</h1>
+        <h1 class="text-gray-400 text-sm md:text-2xl text-center mb-10">_______________________________</h1>
     </div>
 
 
     <div class="flex flex-col lg:flex-row mb-30">
-        <img src="about.jpg" alt="" class="h-63 w-[80%] lg:w-145 ml-0 md:ml-23 shrink-0">
+        <img src="about.jpg" alt="" class="h-63 w-[80%] lg:w-145 ml-10 md:ml-23 shrink-0">
         <div class="flex flex-col pl-6 pr-18">
             <h1 class="text-4xl mt-4 text-[#21253D]">My Journey</h1>
-            <p class="mt-2 text-[#55575e]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <p class="mt-2 text-[#55575e] text-sm lg:text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod
                 tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -94,10 +116,11 @@
     </div>
 
 
-    <div class="flex flex-col lg:flex-row mb-25">
+    <div class="flex flex-col lg:flex-row mb-25  ml-0">
         <div class="flex flex-col pr-6 pl-22 mt-2">
             <h1 class="text-4xl mt-4 text-[#21253D]">My Journey</h1>
-            <p class="mt-2 text-[#2a2b2c] text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            <p class="mt-2 text-[#55575e] text-sm lg:text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do
                 eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -106,7 +129,7 @@
                 class="w-26 rounded-md border border-[#27c5fa] p-1 mt-2 text-[#23c8ff] hover:text-black  hover:bg-[#27d7fa] ">Learn
                 More</button>
         </div>
-        <img src="journey.jpg" alt="" class="h-63 w-[80%] lg:w-142 mr-0 md:mr-23 shrink-0">
+        <img src="journey.jpg" alt="" class="h-63 w-[80%] lg:w-142 mr-10 md:mr-23 shrink-0">
 
     </div>
 
@@ -287,20 +310,21 @@
     </div>
 
 
-<!------checkout---->
-<div class="bg-[#98ddeb] text-center pt-13 pb-13 w-full">
-    <h1 class="text-lg lg:text-4xl text-white">Check out my Git Profile</h1>
-    <p class="pt-3 pb-3 text-sm lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="https://github.com/yourusername" target="_blank"
-        class="inline-flex items-center justify-center border border-white rounded-md px-4 py-2 mt-2 m-5 text-white hover:text-black hover:bg-white transition-colors">
-        <i class="fa-solid fa-circle-arrow-right pr-2"></i>
-        <span>Learn More</span>
-    </a>
-</div>
+    <!------checkout---->
+    <div class="bg-[#98ddeb] text-center pt-13 pb-13 w-full">
+        <h1 class="text-lg lg:text-4xl text-white">Check out my Git Profile</h1>
+        <p class="pt-3 pb-3 text-sm lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="https://github.com/yourusername" target="_blank"
+            class="inline-flex items-center justify-center border border-white rounded-md px-4 py-2 mt-2 m-5 text-white hover:text-black hover:bg-white transition-colors">
+            <i class="fa-solid fa-circle-arrow-right pr-2"></i>
+            <span>Learn More</span>
+        </a>
+    </div>
 
     <!----contact us---->
     <div class="mb-10" id="contact">
-        <h1 class="text-5xl text-center mt-15 ">Contact Us</h1>
+        <h1 class="text-lg lg:text-5xl text-center mt-15 ">Contact Us</h1>
         <h1 class="text-gray-400 text-2xl text-center mb-2">_______________________________</h1>
     </div>
 

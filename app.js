@@ -151,3 +151,11 @@ submit.addEventListener("click", function () {
     document.getElementById("submiterror").innerHTML="Submit Successfully!";
 }
 })
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+});
