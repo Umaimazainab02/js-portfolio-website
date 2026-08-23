@@ -12,37 +12,38 @@
 
 <body>
     <!---- header --->
-    <nav class="flex justify-between items-center p-2 bg-blue-400 text-white">
-        <h1 class="inline-block text-xl font-bold text-purple-700 " style="text-shadow: 5px 2px 5px white;">
+    <nav class="flex justify-between items-center p-2 bg-blue-400 w-full">
+        <h1 class="inline-block text-lg md:text-xl font-bold text-purple-500 md:text-amber-300 lg:text-white"
+            style="text-shadow: 5px 2px 5px white;">
             Umaima Zainab
         </h1>
         <ul class="flex gap-6">
             <li>
-                <a href="#home" class="text-white hover:text-purple-700 font-bold transition duration-300 ">
+                <a href="#home" class="text-white  hover:text-purple-700 hidden md:block font-bold transition duration-300 ">
                     Home
                 </a>
             </li>
 
             <li>
-                <a href="#about" class="text-white hover:text-purple-700 font-bold transition duration-300">
+                <a href="#about" class="text-white hover:text-purple-700 hidden md:block font-bold transition duration-300">
                     About Us
                 </a>
             </li>
 
             <li>
-                <a href="#services" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                <a href="#services" class="text-white hover:text-purple-600 hidden md:block font-bold transition duration-300">
                     Services
                 </a>
             </li>
 
             <li>
-                <a href="#gallery" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                <a href="#gallery" class="text-white hover:text-purple-600 hidden md:block font-bold transition duration-300">
                     Portfolio
                 </a>
             </li>
 
             <li>
-                <a href="#contact" class="text-white hover:text-purple-600 font-bold transition duration-300">
+                <a href="#contact" class="text-white hover:text-purple-600 hidden md:block font-bold transition duration-300">
                     Contact
                 </a>
             </li>
@@ -76,8 +77,8 @@
     </div>
 
 
-    <div class="flex flex-row mb-30">
-        <img src="about.jpg" alt="" class="h-63 w-145 ml-23 shrink-0">
+    <div class="flex flex-col lg:flex-row mb-30">
+        <img src="about.jpg" alt="" class="h-63 w-[80%] lg:w-145 ml-0 md:ml-23 shrink-0">
         <div class="flex flex-col pl-6 pr-18">
             <h1 class="text-4xl mt-4 text-[#21253D]">My Journey</h1>
             <p class="mt-2 text-[#55575e]">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -93,7 +94,7 @@
     </div>
 
 
-    <div class="flex flex-row mb-25">
+    <div class="flex flex-col lg:flex-row mb-25">
         <div class="flex flex-col pr-6 pl-22 mt-2">
             <h1 class="text-4xl mt-4 text-[#21253D]">My Journey</h1>
             <p class="mt-2 text-[#2a2b2c] text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -105,7 +106,7 @@
                 class="w-26 rounded-md border border-[#27c5fa] p-1 mt-2 text-[#23c8ff] hover:text-black  hover:bg-[#27d7fa] ">Learn
                 More</button>
         </div>
-        <img src="journey.jpg" alt="" class="h-63 w-142 mr-23 shrink-0">
+        <img src="journey.jpg" alt="" class="h-63 w-[80%] lg:w-142 mr-0 md:mr-23 shrink-0">
 
     </div>
 
@@ -116,9 +117,9 @@
         <h1 class="text-gray-400 text-2xl text-center mb-2">_______________________________</h1>
 
     </div>
-    <div class="flex flex-row gap-4 bg-[#f2f3f5] ">
-        <div class="flex flex-row h-50 w-95 border border-gray-300 ml-20 mb-10 rounded-lg">
-            <img src="tree.jpg" alt="" class="h-49 w-28 rounded-l-sm">
+    <div class="flex flex-col lg:flex-row gap-4 bg-[#f2f3f5] ">
+        <div class="flex flex-row h-50 w-[80%] lg:w-95 border border-gray-300  ml-3 lg:ml-20  mb-10 rounded-lg"> <img
+                src="tree.jpg" alt="" class="h-49 w-28 rounded-l-sm">
             <div class="flex flex-col bg-white pl-8 pr-4">
                 <h1 class="text-xl">Card title</h1>
                 <p class="text-base font-normal text-gray-800">This is a wider card with supporting text below as a
@@ -127,7 +128,7 @@
                 <p class="pt-2 text-sm text-[#a0a0a8]">Last updated 3 mins ago</p>
             </div>
         </div>
-        <div class="flex flex-row h-50 w-95 border border-gray-300 rounded-sm">
+        <div class="flex flex-row h-50 w-[80%] lg:w-95 border border-gray-300 rounded-sm mb-10 ml-3 lg:ml-20 ">
             <img src="tree.jpg" alt="" class="h-50 w-28 rounded-l-sm">
             <div class="flex flex-col bg-white pl-8 pr-4 ">
                 <h1 class="text-xl">Card title</h1>
@@ -137,7 +138,7 @@
                 <p class="pt-2 text-sm text-[#9d9da7]">Last updated 3 mins ago</p>
             </div>
         </div>
-        <div class="flex flex-row h-50 w-95 border  border-gray-300 rounded-sm">
+        <div class="flex flex-row h-50 w-[80%] lg:w-95 border border-gray-300 rounded-sm ml-3 lg:ml-20 mb-10">
             <img src="tree.jpg" alt="" class="h-50 w-28 rounded-l-sm">
             <div class="flex flex-col bg-white pl-8 pr-4">
                 <h1 class="text-xl">Card title</h1>
@@ -286,22 +287,16 @@
     </div>
 
 
-
-    <!------checkout---->
-    <div class="bg-[#98ddeb] text-center pt-13 pb-13">
-        <h1 class="text-4xl text-white">Check out my Git Profile</h1>
-        <p class="pt-3 pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-            ut
-            labore et
-            dolore magna aliqua.</p>
-        <div
-            class="flex flex-row ml-155 w-30 border border-white  rounded-md p-1 mt-2 text-white hover:text-black hover:bg-white">
-            <i class="fa-solid fa-circle-arrow-right pr-2 pt-1"></i>
-            <button class=" ">Learn
-                More</button>
-        </div>
-
-    </div>
+<!------checkout---->
+<div class="bg-[#98ddeb] text-center pt-13 pb-13 w-full">
+    <h1 class="text-lg lg:text-4xl text-white">Check out my Git Profile</h1>
+    <p class="pt-3 pb-3 text-sm lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="https://github.com/yourusername" target="_blank"
+        class="inline-flex items-center justify-center border border-white rounded-md px-4 py-2 mt-2 m-5 text-white hover:text-black hover:bg-white transition-colors">
+        <i class="fa-solid fa-circle-arrow-right pr-2"></i>
+        <span>Learn More</span>
+    </a>
+</div>
 
     <!----contact us---->
     <div class="mb-10" id="contact">
@@ -312,18 +307,18 @@
     <div class="flex flex-col items-center">
         <div>
             <h2>Name</h2>
-            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8 mt-2 " id="name">
+            <input type="text" placeholder="" class="border border-gray-300 w-[90%] lg:w-200 h-8 mt-2 " id="name">
             <p id="nameerror" class="text-red-500 text-sm"></p>
         </div>
         <div class="mt-5">
             <h2>Email Address</h2>
-            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8 mt-2" id="email">
+            <input type="text" placeholder="" class="border border-gray-300 w-[90%] lg:w-200 h-8 mt-2" id="email">
             <p id="emailerror" class="text-red-500 text-sm"></p>
             <p class="text-gray-500 text-sm">We'll not share your email with anyone else.</p>
         </div>
         <div class="mt-6">
             <h2>Password</h2>
-            <input type="text" placeholder="" class="border border-gray-300 w-200 h-8" id="password">
+            <input type="text" placeholder="" class="border border-gray-300 w-[90%] lg:w-200 h-8" id="password">
             <p id="passerror" class="text-red-500 text-sm"></p>
             <div class="flex flex-row">
                 <h2 class=" mt-2 mr-3  mb-3">Gender</h2>
@@ -345,7 +340,7 @@
             </div>
             <div mt-6>
                 <h2>City</h2>
-                <select name="" class="w-200 h-9 border border-gray-300 mt-2 text-gray-700" id="select">
+                <select name="" class="w-[90%] lg:w-200 h-9 border border-gray-300 mt-2 text-gray-700" id="select">
 
                     <option value=""> Select city</option>
                     <option value="bwp">Bwp </option>
@@ -358,7 +353,7 @@
 
             <div class="mt-6 mb-9">
                 <h1 class="pb-2">Put here short details </h1>
-                <textarea id="detail" class="border border-gray-300 w-200 h-20 p-2"></textarea>
+                <textarea id="detail" class="border border-gray-300 w-[90%] lg:w-200 h-20 p-2"></textarea>
                 <p id="detailerror" class="text-red-500 text-sm"></p>
 
             </div>
@@ -382,7 +377,7 @@
 
             <div class="mt-6 mb-2">
                 <h1 class="pb-2">Address</h1>
-                <textarea class="border border-gray-300 w-200 h-16" id="address"></textarea>
+                <textarea class="border border-gray-300 w-[90%] lg:w-200 h-16" id="address"></textarea>
                 <p id="addresserror" class="text-red-500 mt-2 text-sm"></p>
 
             </div>
@@ -401,12 +396,12 @@
                 Submit
             </button>
             <p id="submiterror" class="text-red-500 mt-2 text-3xl font-bold flex justify-center "></p>
-         </div>
-            <!-----footer---->
-            <div class="flex flex-row justify-center w-337 h-6 bg-[#6C757D] text-white">
+        </div>
+        <!-----footer---->
+        <div class="flex flex-row justify-center w-full h-6 bg-[#6C757D] text-white">
             <h1>@copyright</h1><br>
             <h1 class="font-bold"> Md. Talal Wasim (Full Stack - Software Engineer)</h1>
-       
+
         </div>
         <script src="app.js"></script>
 </body>
