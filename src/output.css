@@ -211,9 +211,6 @@
   .inset-0 {
     inset: 0px;
   }
-  .top-1 {
-    top: var(--spacing);
-  }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
@@ -268,9 +265,6 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mt-9 {
-    margin-top: calc(var(--spacing) * 9);
-  }
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
   }
@@ -304,35 +298,20 @@
   .ml-0 {
     margin-left: 0px;
   }
-  .ml-2 {
-    margin-left: calc(var(--spacing) * 2);
-  }
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
   }
   .ml-4 {
     margin-left: calc(var(--spacing) * 4);
   }
-  .ml-5 {
-    margin-left: calc(var(--spacing) * 5);
-  }
   .ml-7 {
     margin-left: calc(var(--spacing) * 7);
-  }
-  .ml-8 {
-    margin-left: calc(var(--spacing) * 8);
   }
   .ml-18 {
     margin-left: calc(var(--spacing) * 18);
   }
-  .ml-25 {
-    margin-left: calc(var(--spacing) * 25);
-  }
   .ml-28 {
     margin-left: calc(var(--spacing) * 28);
-  }
-  .ml-45 {
-    margin-left: calc(var(--spacing) * 45);
   }
   .flex {
     display: flex;
@@ -346,20 +325,17 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
   .h-4 {
     height: calc(var(--spacing) * 4);
-  }
-  .h-6 {
-    height: calc(var(--spacing) * 6);
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
   .h-9 {
     height: calc(var(--spacing) * 9);
+  }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
@@ -381,6 +357,12 @@
   }
   .h-125 {
     height: calc(var(--spacing) * 125);
+  }
+  .h-135 {
+    height: calc(var(--spacing) * 135);
+  }
+  .h-145 {
+    height: calc(var(--spacing) * 145);
   }
   .h-full {
     height: 100%;
@@ -409,18 +391,8 @@
   .max-w-full {
     max-width: 100%;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
@@ -428,9 +400,6 @@
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -502,9 +471,6 @@
   }
   .bg-\[\#f2f3f5\] {
     background-color: #f2f3f5;
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-black\/50 {
     background-color: color-mix(in srgb, #000 50%, transparent);
@@ -616,23 +582,14 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-\[-9px\] {
-    font-size: -9px;
-  }
   .text-\[9px\] {
     font-size: 9px;
   }
   .text-\[10px\] {
     font-size: 10px;
   }
-  .text-\[11px\] {
-    font-size: 11px;
-  }
   .text-\[13px\] {
     font-size: 13px;
-  }
-  .text-\[913px\] {
-    font-size: 913px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -656,9 +613,6 @@
   }
   .text-\[\#a0a0a8\] {
     color: #a0a0a8;
-  }
-  .text-\[-\] {
-    color: -;
   }
   .text-gray-400 {
     color: var(--color-gray-400);
@@ -687,18 +641,11 @@
       color: color-mix(in oklab, var(--color-white) 45%, transparent);
     }
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .accent-blue-600 {
     accent-color: var(--color-blue-600);
   }
   .opacity-0 {
     opacity: 0%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -971,11 +918,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1003,7 +945,6 @@
       --tw-translate-z: 0;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
